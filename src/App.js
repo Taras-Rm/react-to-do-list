@@ -83,7 +83,7 @@ class App extends React.Component {
     return (
     <div className="App">
       <h2 className="headerTitle">To do:</h2>
-      <span className="activeItem">Active items: {this.state.activeItemsCount}</span>
+      <span className="activeItem">ACtive items: {this.state.activeItemsCount}</span>
       <ToDoList 
       changeItemStatus={this.changeItemStatus} 
       toDoListItems={this.state.toDoListItems}
