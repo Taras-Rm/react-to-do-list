@@ -1,161 +1,162 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 20px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .App {
-    background-color:rgb(245,245,245);
-    padding: 20px 20px 70px 20px;
-    max-width: 700px;
-    margin: 0 auto;
-    border: 3px solid rgb(229,229,229);
-    border-radius: 5px;
+  background-color: rgb(245, 245, 245);
+  padding: 20px 20px 70px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 3px solid rgb(229, 229, 229);
+  border-radius: 5px;
 }
 
 .headerTitle {
-    font-size: 50px;
-    margin-bottom: 20px;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .activeItem {
-    display: inline-block;
-    font-size: 25px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .app_toDoItems {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border: 2px solid rgb(229,229,229);
-    border-radius: 5px;
-    
-    font-size: 30px;
-    margin: 0 auto 30px auto;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 5px;
+
+  font-size: 30px;
+  margin: 0 auto 30px auto;
+  text-align: center;
 }
 
 .app_toDoItems_toDoItem {
-    background-color: #fff;
-    padding: 0 20px;
-    height: 60px;
+  background-color: #fff;
+  padding: 0 20px;
+  height: 60px;
 }
 
 .itemText {
-    font-size: 23px;
+  font-size: 23px;
 }
 
 .app_toDoItems_toDoItem + .app_toDoItems_toDoItem {
-    border-top: 2px solid rgb(229,229,229);
+  border-top: 2px solid rgb(229, 229, 229);
 }
 
 .app_toDoItems_toDoItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .toDoButtons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item_delete_btn {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .item_delete_btn {
-    display: block;
-    background-color: red;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    outline: 0;
-    border: none;
-    transition: .5s all;
+  display: block;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+  transition: 0.5s all;
 }
 
 .item_delete_btn:hover {
-    background-color: rgb(180, 11, 11);
+  background-color: rgb(180, 11, 11);
 }
 
 .item_check_btn {
-    display: block;
-    background-color: green;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    outline: 0;
-    border: none;
-    transition: .5s all;
+  display: block;
+  background-color: green;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+  transition: 0.5s all;
 }
 
 .item_check_btn:hover {
-    background-color: rgb(47, 168, 47);}
+  background-color: rgb(47, 168, 47);
+}
 
 .app_addItem_input {
-    display: flex;
-    justify-content: space-between;
-    border-top: 2px solid rgb(229,229,229);
-    align-items: center;
-    padding-top: 20px;
-    margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid rgb(229, 229, 229);
+  align-items: center;
+  padding-top: 20px;
+  margin-bottom: 25px;
 }
 
 .wordTask {
-    margin-left: 52px;
-    font-size: 23px;
-    font-weight: 600;
-    color: rgb(59, 59, 59);
+  margin-left: 52px;
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(59, 59, 59);
 }
 
 .input {
-    width: 500px;
-    height: 45px;
-    font-size: 18px;
-    border: 3px solid rgb(229,229,229);
-    border-radius: 5px;
-    outline: 0;
-    padding: 0 10px;
+  width: 500px;
+  height: 45px;
+  font-size: 18px;
+  border: 3px solid rgb(229, 229, 229);
+  border-radius: 5px;
+  outline: 0;
+  padding: 0 10px;
 }
 
-.app_addItem_btn button{
-    height: 45px;
-    color: #fff;
-    background-color: rgb(52,122,182);
-    outline: 0;
-    font-size: 20px;
-    padding: 10px 16px;
-    border-radius: 5px;
-    border: none;
-    float: right;
-    transition: .5s all;
-    position: relative;
+.app_addItem_btn button {
+  height: 45px;
+  color: #fff;
+  background-color: rgb(52, 122, 182);
+  outline: 0;
+  font-size: 20px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  float: right;
+  transition: 0.5s all;
+  position: relative;
 }
 
 .app_addItem_btn button:hover {
-    background-color: rgb(84, 173, 252);
+  background-color: rgb(84, 173, 252);
 }
 
 .item_delete_btn::before {
-    content: "X";
-    color: #fff;
-    font-size: 20px;
+  content: 'X';
+  color: #fff;
+  font-size: 20px;
 }
 
-
 .item_check_btn::before {
-    content: "+";
-    color: #fff;
-    font-size: 20px;
+  content: '+';
+  color: #fff;
+  font-size: 20px;
 }
 
 /* .item_check_btn::before {
@@ -166,5 +167,5 @@ body {
 } */
 
 .itemText_Done {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
