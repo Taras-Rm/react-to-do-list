@@ -57,9 +57,11 @@ class App extends React.Component {
         isDone: false,
       });
 
+      let countArr = newItemsArr.filter((item) => (item.isDone === false ? item : null)).length;
+
       return {
         toDoListItems: newItemsArr,
-        activeItemsCount: prevState.activeItemsCount++,
+        activeItemsCount: countArr,
         inputText: '',
       };
     });
